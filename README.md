@@ -1,15 +1,27 @@
 # QuoraClone
 
-1. Create a virtual environment
+## Setup Instructions
+
+### 1. Create a virtual environment
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
-2. Install all the requirements
+### 2. Install requirements
+```bash
 pip install -r requirements.txt
+```
 
-3. Migrate and Make Migrations for all the tables
-python manage.py migrate
+### 3. Apply migrations
+```bash
 python manage.py makemigrations core
+python manage.py migrate
+```
 
-4. Run the application
+### 4. Run the application
+```bash
 python manage.py runserver
+```
+
+Visit `http://127.0.0.1:8000/` in your browser to access the app.
